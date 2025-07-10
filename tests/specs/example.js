@@ -3,5 +3,6 @@ describe('Google Search', () => {
     await browser.url('/');
     const title = await browser.getTitle();
     expect(title).toContain('Google');
+    await browser.url('/');
   });
 });
